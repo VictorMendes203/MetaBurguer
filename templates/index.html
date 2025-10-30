@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio DC Comics</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1>Meta-Burguer</h1>
+    </header>
+
+    <main class="menu">
+        {% for item in items %}
+        <div class="card">
+            <img src="{{ url_for('static', filename=item.imagem) }}" alt="{{ item.nome }}">
+            <div class="card-content">
+                <h2>{{ item.nome }}</h2>
+                <p>{{ item.descricao }}</p>
+                <span class="price">{{ item.preco }}</span>
+            </div>
+        </div>
+        {% endfor %}
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Cardápio DC Comics | Desenvolvido por Victor Hugo</p>
+    </footer>
+</body>
+</html>
