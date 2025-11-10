@@ -36,7 +36,20 @@ def home():
             "descricao": "Uma bebida verde vibrante pode ser um suco ou smoothiefeita com abacaxi, hortelã fresca e limão, ganhando sua cor intensa de um toque de espinafre",
             "preco": "R$ 10,00",
             "imagem": "lanternaverde.jpg"
+        },
+        {
+            "nome": "Maré Alta",
+            "descricao": "Uma limonada suíça feita com curaçau blue, o que lhe dá uma cor azul oceânica profunda e um leve sabor cítrico.Servido com uma rodela de limão siciliano e uma leve borda de sal no copo.",
+            "preco": "R$ 10,00",
+            "imagem": "aquaman.jpg"
+        },
+        {
+            "nome": "Poder de Shazam!",
+            "descricao": "Um pão australiano (escuro, lembrando o uniforme clássico) com peito de frango empanado e frito, queijo muçarela derretido e um molho barbecue com um toque agridoce.Acompanha uma porção de batatas fritas em formato de raio.",
+            "preco": "R$ 30,00",
+            "imagem": "shazam.jpg"
         }
+
     ]
     return render_template('index.html', items=items)
 
